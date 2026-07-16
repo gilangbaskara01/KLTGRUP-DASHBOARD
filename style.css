@@ -34,6 +34,8 @@ circle at top,
 color:white;
 
 
+overflow-x:hidden;
+
 }
 
 
@@ -85,12 +87,7 @@ box-shadow:
 
 
 
-overflow:hidden;
-
-
 }
-
-
 
 
 
@@ -166,9 +163,8 @@ text-transform:uppercase;
 
 
 
-
 /* =========================
-BUTTON FORM CHECK OUT
+BUTTON CHECK OUT
 ========================= */
 
 
@@ -259,7 +255,6 @@ transition:.3s;
 
 
 
-
 .checkout-btn:hover{
 
 
@@ -285,6 +280,58 @@ box-shadow:
 
 
 /* =========================
+TABLE WRAPPER
+========================= */
+
+
+.table-container{
+
+
+width:100%;
+
+
+overflow-x:auto;
+
+
+-webkit-overflow-scrolling:touch;
+
+
+border-radius:20px;
+
+
+
+}
+
+
+
+
+
+.table-container::-webkit-scrollbar{
+
+
+height:8px;
+
+
+}
+
+
+
+.table-container::-webkit-scrollbar-thumb{
+
+
+background:#2563eb;
+
+
+border-radius:20px;
+
+
+}
+
+
+
+
+
+/* =========================
 TABLE
 ========================= */
 
@@ -295,6 +342,9 @@ table{
 width:100%;
 
 
+min-width:1100px;
+
+
 border-collapse:separate;
 
 
@@ -303,7 +353,6 @@ border-spacing:0 8px;
 
 
 }
-
 
 
 
@@ -343,7 +392,12 @@ color:white;
 
 
 
+white-space:nowrap;
+
+
 }
+
+
 
 
 
@@ -400,6 +454,9 @@ border-bottom:
 
 
 
+white-space:nowrap;
+
+
 }
 
 
@@ -435,6 +492,7 @@ rgba(34,197,94,.10);
 color:#dcfce7;
 
 
+
 }
 
 
@@ -446,13 +504,17 @@ color:#dcfce7;
 color:#22c55e;
 
 
+
 font-weight:700;
+
 
 
 white-space:nowrap;
 
 
+
 }
+
 
 
 
@@ -513,6 +575,7 @@ font-weight:800;
 
 
 
+
 @keyframes overtimePulse{
 
 
@@ -522,6 +585,7 @@ font-weight:800;
 box-shadow:
 
 inset 0 0 0 rgba(239,68,68,0);
+
 
 
 }
@@ -563,6 +627,7 @@ inset 0 0 0 rgba(239,68,68,0);
 
 
 
+
 /* =========================
 BELUM CHECK IN
 ========================= */
@@ -591,6 +656,7 @@ rgba(133,77,14,.25)
 
 
 
+
 .row-pending td{
 
 
@@ -602,6 +668,7 @@ font-weight:700;
 
 
 }
+
 
 
 
@@ -625,6 +692,7 @@ body{
 padding:10px;
 
 
+
 }
 
 
@@ -637,8 +705,8 @@ padding:10px;
 padding:20px;
 
 
-}
 
+}
 
 
 
@@ -649,7 +717,10 @@ h1{
 font-size:30px;
 
 
+
 }
+
+
 
 
 
@@ -657,6 +728,20 @@ h2{
 
 
 font-size:16px;
+
+
+
+}
+
+
+
+
+
+
+.top-menu{
+
+
+width:100%;
 
 
 }
@@ -671,6 +756,21 @@ font-size:16px;
 width:100%;
 
 
+
+}
+
+
+
+
+.table-container{
+
+
+width:100%;
+
+
+overflow-x:auto;
+
+
 }
 
 
@@ -681,6 +781,7 @@ table{
 
 
 min-width:1100px;
+
 
 
 }
@@ -698,6 +799,70 @@ padding:10px;
 
 font-size:12px;
 
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+SMALL PHONE
+========================= */
+
+
+@media(max-width:480px){
+
+
+
+h1{
+
+
+font-size:26px;
+
+
+}
+
+
+
+h2{
+
+
+font-size:14px;
+
+
+}
+
+
+
+.box{
+
+
+border-radius:20px;
+
+
+padding:15px;
+
+
+}
+
+
+
+.checkout-btn{
+
+
+font-size:14px;
+
+
+padding:14px;
 
 
 }
